@@ -18,6 +18,14 @@ public class Plat {
         this.prixEnCentimesEuros = prixEnCentimesEuros;
     }
 
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+    
     public String getNom() {
         return nom;
     }
@@ -47,11 +55,5 @@ public class Plat {
         return Objects.hash(nom);
     }
 
-	public Integer getId() {
-		return id;
-	}
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
 }
