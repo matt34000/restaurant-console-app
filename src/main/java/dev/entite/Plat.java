@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class Plat {
 
+	private Integer id;
     private String nom;
     private Integer prixEnCentimesEuros;
 
@@ -45,4 +46,12 @@ public class Plat {
     public int hashCode() {
         return Objects.hash(nom);
     }
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
 }
